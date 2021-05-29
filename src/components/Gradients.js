@@ -1,14 +1,22 @@
-import { useState } from "react"
+
+import { useGradients } from "../context/GradientsContext"
 import GradientsList from "./GradientsList"
 import GradientsSelect from "./GradientsSelect"
 
 const Gradients = () => {
-  const [filter, setFilter] = useState("all")
+  const {loading, error} = useGradients()
 
   return (
     <>
-      <GradientsSelect filter={filter} setFilter={setFilter} />
-      <GradientsList filter={filter} setFilter={setFilter} />
+      {loading ? (
+      <p className="text-center">loading...</p>
+      ) : (
+      <>
+        <GradientsSelect />
+        {error && <p>{error}</p>}
+        <GradientsList />
+      </>
+      )}
     </>
   )
 }
