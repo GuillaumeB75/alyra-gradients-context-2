@@ -1,6 +1,6 @@
 import { useFilter } from "../context/FilterContext"
 import Gradient from "./Gradient"
-//import { gradients } from "../gradients"
+
 import {useGradients} from "../context/GradientsContext"
 
 const GradientsList = () => {
@@ -13,6 +13,7 @@ const GradientsList = () => {
     }
     return el.tags.includes(filter)
   })
+  
   return (
     <ul className="row list-unstyled">
       {list.map((el) => {

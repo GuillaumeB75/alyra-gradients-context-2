@@ -1,5 +1,4 @@
 import {useFilter} from "../context/FilterContext"
-//import { uniqueTags as tags } from "../gradients"
 import { useGradients } from "../context/GradientsContext"
 
 const GradientsSelect = () => {
@@ -16,7 +15,7 @@ const GradientsSelect = () => {
       <select
         className="form-select"
         id="select"
-        value={filter}
+        value={ filter }
         onChange={handleSelectChange}
       >
         <option value="all">Tous</option>
