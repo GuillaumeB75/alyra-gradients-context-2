@@ -3,7 +3,7 @@ import GradientsHeader from "../components/GradientsHeader"
 import Footer from "../components/Footer"
 import {FilterContextProvider} from "../context/FilterContext"
 
-import {GradientsContextProvider} from "../context/GratientsContext"
+import {GradientsContextProvider} from "../context/GradientsContext"
 const Home =()=>{
  return ( 
       <div className="App min-vh-100 d-flex flex-column">
