@@ -1,4 +1,4 @@
-import Footer from "../components/Footer"
+
 import Gradients from "../components/Gradients"
 import GradientsHeader from "../components/GradientsHeader"
 import {FilterContextProvider} from "../context/FilterContext"
@@ -17,7 +17,7 @@ const Home =()=>{
            </FilterContextProvider>
            
           </main>
-          <Footer/>
+          
         </>
   )
 }
